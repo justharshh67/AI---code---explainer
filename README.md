@@ -1,14 +1,22 @@
 # AI Code Explainer
 
-A small Streamlit app that explains code snippets using AI.
+A polished Streamlit app for explaining code snippets using local AI through Ollama.
+
+## Features
+
+- Modern dark developer-tool interface
+- Upload and analyze code files locally
+- Use the existing Streamlit Ace editor for editing code
+- Generate explanations with the configured Ollama model
+- Download generated explanations as Markdown
 
 ## Quick start
 
-1. Create a virtual environment and activate it:
+1. Create and activate a virtual environment:
 
 ```powershell
 python -m venv venv
-.\\venv\\Scripts\\Activate.ps1
+.\venv\Scripts\Activate.ps1
 ```
 
 2. Install dependencies:
@@ -27,13 +35,8 @@ streamlit run app.py
 
 - `app.py` — main Streamlit application
 - `requirements.txt` — Python dependencies
-
-## CI
-
-This repository includes a GitHub Actions workflow that installs dependencies and checks that `app.py` compiles.
+- `tests/test_app.py` — basic syntax and content checks
 
 ## Repository
 
 Published at: https://github.com/justharshh67/AI---code---explainer
-# AI---code---explainer
-An AI-powered code explanation tool built with Streamlit and Ollama (Llama 3.2). Paste or upload code to receive beginner-friendly explanations, complexity analysis, and improvement suggestions. After uploading it, we can continue improving it with: 🎨 Better UI 💬 Chat interface 📄 PDF export ⚡ Streaming responses 🌙 Professional theme
